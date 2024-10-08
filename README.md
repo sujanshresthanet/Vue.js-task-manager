@@ -36,25 +36,10 @@ Follow the steps below to install and set up the project in your local environme
 
 Setup
 -----
-
-To set up your development environment, follow these steps:
-
-### Install Bootstrap
-
-    npm install bootstrap
-
-### Import Bootstrap in Your Project
-
-Open `main.js` (or `main.ts` for TypeScript projects) and add the following imports:
+Make sure you have Vue CLI installed. If you haven’t set up a Vue.js project yet, you can do it using the following commands:
 
     
-    // main.js
-    import { createApp } from 'vue';
-    import App from './App.vue';
-    import 'bootstrap/dist/css/bootstrap.min.css';
-    import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-    
-    createApp(App).mount('#app');
+    npm install -g @vue/cli
     
 
 File Structure
