@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- This declaration defines the document type and version of HTML. Here, we are using HTML5. -->
+<html lang="">
+  <!-- The 'lang' attribute can be used to declare the language of the document, 
+       but it is currently left empty and can be updated with a language code like 'en' for English. -->
+
+  <head>
+    <!-- The head element contains metadata about the document, such as character encoding, title, 
+         viewport settings, and links to external resources like CSS files. -->
+
+    <meta charset="utf-8">
+    <!-- Specifies the character encoding for the HTML document, using UTF-8, a universal character set 
+         that supports all languages and symbols. It ensures proper rendering of text. -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- This meta tag forces Internet Explorer to use the latest rendering engine available, 
+         improving compatibility with modern web standards. -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- This meta tag configures the viewport to make the web page responsive. 
+         'width=device-width' ensures the page's width matches the screen's width, 
+         and 'initial-scale=1.0' sets the initial zoom level. -->
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- Defines a favicon (small icon in the browser tab) for the web application. 
+         The placeholder '<%= BASE_URL %>' will be replaced during the build process to 
+         include the base URL for the app. -->
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- The title tag sets the title of the web page, which appears in the browser tab. 
+         The placeholder '<%= htmlWebpackPlugin.options.title %>' will be dynamically replaced 
+         with the app title during the build process using webpack. -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- This link includes the Bootstrap 5.3 CSS framework via a CDN (Content Delivery Network), 
+         which provides pre-built, responsive CSS classes and components for styling. -->
+  </head>
+
+  <body>
+    <!-- The body element contains the visible content of the web page. -->
+
+    <noscript>
+      <!-- The <noscript> tag defines fallback content for users who have disabled JavaScript in their browsers. -->
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <!-- This message informs users that the web application requires JavaScript to function properly.
+           The '<%= htmlWebpackPlugin.options.title %>' placeholder will be replaced with the actual app name. -->
+    </noscript>
+
+    <div id="app">
+      <!-- The 'app' div is a placeholder for the application. In typical JavaScript frameworks like Vue.js 
+           or React, this div serves as the mounting point for the app's main component. -->
+    </div>
+
+    <!-- Popper.js and Bootstrap JS -->
+    <!-- Popper.js is a library for managing popups, tooltips, and dropdowns in Bootstrap.
+         It's required for proper functionality of Bootstrap's dynamic components. -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap's JavaScript file is included via CDN to enable interactive components like modals, tooltips, and carousels. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
